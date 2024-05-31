@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Sedona: Tourist Information Site</title>
+  <link rel="preload" href="fonts/ptsans-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<div class="page-container">
+  <header class="header">
+    <nav class="header-menu">
+      <a class="header-logo" href="#" aria-current="page">
+        <img class="header-logo-img" src="images/logo.svg" width="140" height="70" alt="Coat of arms of the city of Sedona">
+      </a>
+      <ul class="header-menu-list list-reset">
+        <li class="header-menu-item">
+          <a class="header-menu-link header-menu-link-current" href="#">
+            Home
+          </a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#features">
+            About Sedona
+          </a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="catalog.html">
+            Hotels
+          </a>
+        </li>
+      </ul>
+      <ul class="header-user list-reset">
+        <li class="header-user-item">
+          <button class="site-search" type="button">
+          <span class="visually-hidden">
+            Search
+          </span>
+          </button>
+        </li>
+        <li class="header-user-item">
+          <a class="header-menu-link" href="#">
+          <span class="visually-hidden">
+            Favorite
+          </span>
+          </a>
+          <span class="favorites-tag">
+            12
+          </span>
+        </li>
+        <li class="header-user-item">
+          <a class="header-user-button custom-button" href="#">
+            Sing In
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container main-index">
+    <section class="hero">
+      <h1 class="visually-hidden">
+        Sedona: Tourist Information Site
+      </h1>
+      <img src="images/welcome.svg" width="458" height="352" loading="lazy"
+           alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+    </section>
+
+    <section class="features" id="features">
+      <h2 class="visually-hidden">
+        The city's main advantages
+      </h2>
+      <p class="features-title heading-2-title">
+        Sedona is a small town in Arizona that&nbsp;deserves more!
+      </p>
+      <p class="features-about">
+        Let's take a look at the reasons why Sedona is way cooler than the Grand Canyon!
+      </p>
+      <ul class="features-list-1 list-reset">
+        <li class="features-list-item features-list-item-wide">
+          <div class="features-list-item-container">
+            <h3 class="heading-3-title">
+              A real little town
+            </h3>
+            <p class="features-list-description">
+              Sedona is not an attraction for tourists, it has its own life
+            </p>
+          </div>
+          <img src="images/features-1.jpg" width="800" height="385" loading="lazy" alt="City views">
+        </li>
+        <li class="features-list-item">
+          <div class="features-list-item-container">
+            <h3 class="heading-3-title">
+              Small <br>area
+            </h3>
+            <p class="features-list-description">
+              All sights <br>are very close
+            </p>
+          </div>
+        </li>
+        <li class="features-list-item features-list-item-dark">
+          <div class="features-list-item-container">
+            <h3 class="heading-3-title">
+              Beautiful road
+            </h3>
+            <p class="features-list-description">
+              Driving to Sedona from Las Vegas is anything but boring!
+            </p>
+          </div>
+        </li>
+        <li class="features-list-item">
+          <div class="features-list-item-container">
+            <h3 class="heading-3-title">
+              Few <br>tourists
+            </h3>
+            <p class="features-list-description">
+              Most people go to the Grand Canyon and crowd there
+            </p>
+          </div>
+        </li>
+        <li class="features-list-item features-list-item-wide flex-row-reverse">
+          <div class="features-list-item-container">
+            <h3 class="heading-3-title">
+              There's a devil's bridge
+            </h3>
+            <p class="features-list-description">
+              Yes, you can walk on it! If you dare, of course
+            </p>
+          </div>
+          <img src="images/features-2.jpg" width="800" height="385" loading="lazy" alt="Devil's bridge">
+        </li>
+      </ul>
+
+      <h3 class="visually-hidden">
+        Infrastructure
+      </h3>
+      <p class="features-title-2 heading-2-title">
+        Come to Sedona to relax in comfort and coziness!
+      </p>
+      <p class="features-about-2">
+        Experienced staff and quality service!
+      </p>
+      <ul class="features-list-2 list-reset">
+        <li class="features-list-item-2 features-list-item-medium features-list-item-2-housing">
+          <h4 class="heading-3-title">
+            Housing
+          </h4>
+          <p class="features-list-description">
+            We recommend staying in a real motel, it’s just like in the movies!
+          </p>
+        </li>
+        <li class="features-list-item-2 features-list-item-2-food">
+          <h4 class="heading-3-title">
+            Food
+          </h4>
+          <p class="features-list-description">
+            Always order the top specialty burger, you won't be disappointed!
+          </p>
+        </li>
+        <li class="features-list-item-2 features-list-item-medium features-list-item-2-souvenir">
+          <h4 class="heading-3-title">
+            Souvenirs
+          </h4>
+          <p class="features-list-description">
+            Not only Chinese ones, but also real local products!
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="hotel-search">
+      <h2 class="visually-hidden">
+        Finding a Hotel in Sedona
+      </h2>
+      <p class="hotel-search-title heading-2-title">
+        Pique you interest?
+      </p>
+      <p class="hotel-search-about">
+        Enter your expected travel dates, <br>and we will show you the best hotel deals in Sedona
+      </p>
+      <a class="hotel-search-button custom-button" href="catalog.html">
+        Find a hotel in Sedona
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="newsletters newsletters-index">
+      <h2 class="newsletters-title newsletters-title-index heading-2-title">
+        Subscribe to our newsletter
+      </h2>
+      <p class="newsletters-about newsletters-about-index">
+        Only useful information and no spam; <br>scout's honor!
+      </p>
+      <form class="newsletters-form" action="#" method="post">
+        <label class="visually-hidden" for="newsletters-user-email">Your e-mail</label>
+        <input class="newsletters-input" type="email" name="email" id="newsletters-user-email" placeholder="Your e-mail" required>
+        <button class="newsletters-button custom-button" type="submit">
+          Subscribe
+        </button>
+      </form>
+    </section>
+    <div class="footer-contacts">
+      <ul class="socials-list list-reset">
+        <li class="socials-item">
+          <a class="socials-link" href="https://facebook.com/#" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">
+              Facebook group
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 64 64" fill="currentColor">
+              <path d="M48 7H16a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h17V38h-6v-7h6v-5c0-7 4-11 10-11 3.13 0 5 1 5 1v6h-4c-2.86 0-4 2.1-4 4v5h7l-1 7h-6v17h8a8 8 0 0 0 8-8V15a8 8 0 0 0-8-8z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="https://t.me/#" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">
+              Telegram group
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="currentColor">
+              <path d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="https://www.youtube.com/user/#" target="_blank"
+             rel="noreferrer noopener">
+            <span class="visually-hidden">
+              YouTube channel
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="currentColor">
+              <path d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-phone" href="tel:+10000000000">
+        +1 (000) 000-0000
+      </a>
+      <span class="footer-logo">
+        SP
+      </span>
+    </div>
+  </footer>
+</div>
+<div class="modal-container modal-container-close">
+  <div class="modal modal-search">
+    <button class="modal-close-button" type="button">
+      <span class="visually-hidden">Close</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 15 15">
+        <path d="M14.5 1.78 13.2.5 7.49 6.2 1.79.5.48 1.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/>
+      </svg>
+    </button>
+    <section class="modal-content">
+      <h2 class="heading-2-title modal-title">Find a hotel in Sedona</h2>
+      <form class="modal-search-form" action="#" method="post">
+        <p class="modal-field">
+          <label class="modal-field-label" for="check-in-date">
+            Check-in:
+          </label>
+          <input class="modal-field-input" type="text" id="check-in-date" name="check-in-date" value="27 April 2020" placeholder="Please enter a date" required>
+          <span class="modal-form-message modal-form-message-error">
+            We can't send you back in time.
+          </span>
+        </p>
+        <p class="modal-field">
+          <label class="modal-field-label" for="check-out-date">
+            Check-out:
+          </label>
+          <input class="modal-field-input" type="text" id="check-out-date" name="check-out-date" value="1 September 2023" placeholder="Please enter a date" required>
+          <span class="modal-form-message">
+            There are rooms available for these dates. For now.
+          </span>
+        </p>
+        <p class="modal-field modal-field-side">
+          <label class="modal-field-label" for="number-of-adults">
+            Adults:
+          </label>
+          <span class="modal-field-number-control">
+            <button class="modal-field-number-control-button" type="button">
+              <span class="visually-hidden">Reduce the number of people</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                <path d="M3 9v2h14V9H3Z"/>
+              </svg>
+            </button>
+            <input class="modal-field-number-input" type="number" id="number-of-adults" name="number-of-adults" value="2" min="0">
+            <button class="modal-field-number-control-button" type="button">
+              <span class="visually-hidden">Add a person</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+              </svg>
+            </button>
+          </span>
+        </p>
+        <p class="modal-field modal-field-side">
+          <span class="modal-field-label-icon">
+            <label class="modal-field-label" for="number-of-children">
+              Children:
+            </label>
+            <span class="modal-field-tooltip">
+              <button class="modal-field-tooltip-toggle" type="button" aria-labelledby="modal-field-tooltip-label"></button>
+              <span class="modal-field-tooltip-text" role="tooltip" id="modal-field-tooltip-label">
+                Please indicate the number of children, ages 6 to 18, who will be with you. Children under 6 stay free of charge.
+              </span>
+            </span>
+          </span>
+          <span class="modal-field-number-control">
+            <button class="modal-field-number-control-button" type="button">
+              <span class="visually-hidden">Reduce the number of people</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                <path d="M3 9v2h14V9H3Z"/>
+              </svg>
+            </button>
+            <input class="modal-field-number-input" type="number" id="number-of-children" name="number-of-adults" value="2" min="0">
+            <button class="modal-field-number-control-button" type="button">
+              <span class="visually-hidden">Add a person</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+              </svg>
+            </button>
+          </span>
+        </p>
+        <button class="custom-button modal-search-form-button" type="submit">Search</button>
+      </form>
+    </section>
+  </div>
+</div>
+</body>
+</html>

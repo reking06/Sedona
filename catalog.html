@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Sedona. Hotels</title>
+  <link rel="preload" href="fonts/ptsans-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<div class="page-container">
+  <header class="header">
+    <nav class="header-menu">
+      <a class="header-logo" href="index.html" aria-label="Leads to the main page">
+        <img class="header-logo-img" src="images/logo.svg" width="140" height="70" alt="Coat of arms of the city of Sedona">
+      </a>
+      <ul class="header-menu-list list-reset">
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="index.html/#features">
+            About Sedona
+          </a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link header-menu-link-current" href="#">
+            Hotels
+          </a>
+        </li>
+      </ul>
+      <ul class="header-user list-reset">
+        <li class="header-user-item">
+          <button class="site-search" type="button">
+          <span class="visually-hidden">
+            Search
+          </span>
+          </button>
+        </li>
+        <li class="header-user-item">
+          <a class="header-menu-link" href="#">
+          <span class="visually-hidden">
+            Favorite
+          </span>
+          </a>
+          <span class="favorites-tag">
+            12
+        </span>
+        </li>
+        <li class="header-user-item">
+          <a class="header-user-button custom-button" href="#">
+            Sing In
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container main-catalog">
+    <header class="main-catalog-header">
+      <div class="main-catalog-header-container">
+        <h1 class="catalog-title heading-1-title">
+          Sedona Hotels
+        </h1>
+        <ol class="breadcrumbs list-reset">
+          <li class="breadcrumbs-items">
+            <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
+              <span class="visually-hidden">
+                Home
+              </span>
+            </a>
+          </li>
+          <li class="breadcrumbs-items">
+            <span class="breadcrumbs-link">
+              Hotels
+            </span>
+          </li>
+        </ol>
+        <section class="filters">
+          <h2 class="visually-hidden">
+            Search filters
+          </h2>
+          <form class="catalog-filter" action="#" method="get">
+            <fieldset class="catalog-fieldset">
+              <legend class="catalog-fieldset-title">
+                Infrastructure:
+              </legend>
+              <ul class="catalog-fieldset-list list-reset">
+                <li class="catalog-fieldset-list-item">
+                  <label class="catalog-fieldset-option">
+                    <input class="visually-hidden catalog-fieldset-option-input" type="checkbox" name="pool" checked>
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Pool</span>
+                  </label>
+                </li>
+                <li class="catalog-fieldset-list-item">
+                  <label class="catalog-fieldset-option">
+                    <input class="visually-hidden catalog-fieldset-option-input" type="checkbox" name="parking" checked>
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Parking</span>
+                  </label>
+                </li>
+                <li class="catalog-fieldset-list-item">
+                  <label class="catalog-fieldset-option">
+                    <input class="visually-hidden catalog-fieldset-option-input" type="checkbox" name="wi-fi">
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Wi-Fi</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-fieldset">
+              <legend class="catalog-fieldset-title">
+                Housing type:
+              </legend>
+              <ul class="catalog-fieldset-list list-reset">
+                <li class="catalog-fieldset-list-item">
+                  <label class="catalog-fieldset-option">
+                    <input class="visually-hidden catalog-fieldset-option-input" type="radio" name="house-type" value="hotel" checked>
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Hotel</span>
+                  </label>
+                </li>
+                <li class="catalog-fieldset-list-item">
+                  <label class="catalog-fieldset-option">
+                    <input class="visually-hidden catalog-fieldset-option-input" type="radio" name="house-type" value="motel">
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Motel</span>
+                  </label>
+                </li>
+                <li class="catalog-fieldset-list-item">
+                  <label class="catalog-fieldset-option">
+                    <input class="visually-hidden catalog-fieldset-option-input" type="radio" name="house-type" value="apartment">
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Apartment</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-fieldset">
+              <legend class="catalog-fieldset-title">
+                Price, $:
+              </legend>
+              <div class="catalog-range-inputs">
+                <label class="catalog-fieldset-range">
+                  <span class="catalog-fieldset-range-input-label">from</span>
+                  <input class="catalog-fieldset-range-input catalog-fieldset-range-input-min" type="number" name="min-price" value="0" min="0" max="499">
+                </label>
+                <label class="catalog-fieldset-range">
+                  <span class="catalog-fieldset-range-input-label">to</span>
+                  <input class="catalog-fieldset-range-input catalog-fieldset-range-input-max" type="number" name="max-price" value="500" min="1" max="500">
+                </label>
+              </div>
+              <div class="scale-inputs">
+                <div class="scale-bar" style="left: 0; width: 226px">
+                  <button class="scale-toggle scale-toggle-min" type="button">
+                    <span class="visually-hidden">Minimum price</span>
+                  </button>
+                  <button class="scale-toggle scale-toggle-max" type="button">
+                    <span class="visually-hidden">Maximum price</span>
+                  </button>
+                </div>
+              </div>
+            </fieldset>
+            <div class="catalog-filter-button">
+              <button class="catalog-filter-submit custom-button" type="submit">
+                Search
+              </button>
+              <button class="catalog-filter-reset custom-button" type="reset">
+                Reset
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </header>
+
+    <section class="catalog-products">
+      <div class="catalog-products-container">
+        <header class="catalog-products-header">
+          <h2 class="catalog-products-title heading-2-title">
+            Results found:
+            <span class="catalog-products-result heading-2-title">
+              38
+            </span>
+          </h2>
+          <select class="catalog-products-select" name="sorting of catalog products" aria-label="Sort search results">
+            <option value="cheap">
+              Price: Low to High
+            </option>
+            <option value="popular" selected>
+              Most popular first
+            </option>
+            <option value="expensive">
+              Price: High to Low
+            </option>
+          </select>
+          <ul class="view-modes list-reset">
+            <li class="view-mode-item">
+              <button class="view-mode-button view-mode-button-current view-mode-button-grid" type="button">
+                <span class="visually-hidden">
+                  View mode: Grid
+                </span>
+              </button>
+            </li>
+            <li class="view-mode-item">
+              <button class="view-mode-button view-mode-button-card" type="button">
+                <span class="visually-hidden">
+                  View mode: Cards
+                </span>
+              </button>
+            </li>
+            <li class="view-mode-item">
+              <button class="view-mode-button view-mode-button-list" type="button">
+                <span class="visually-hidden">
+                  View mode: List
+                </span>
+              </button>
+            </li>
+          </ul>
+        </header>
+
+        <ul class="catalog-product-list list-reset">
+          <li class="catalog-product-card">
+            <a class="catalog-product-card-link" href="#" tabindex="-1">
+              <img class="catalog-product-img" src="images/hotel-1.jpg" width="300" height="212" loading="lazy"
+                   alt="Surroundings of the Amara Resort & Spa">
+              <h3 class="catalog-product-title">
+                Amara Resort &amp;&nbsp;Spa
+              </h3>
+            </a>
+            <p class="catalog-product-type">
+              Hotel
+            </p>
+            <p class="catalog-product-price">
+              From $57
+            </p>
+            <a class="catalog-product-about custom-button" href="#">
+              more
+            </a>
+            <button class="catalog-product-favorite custom-button" type="button">
+              save
+            </button>
+            <p class="catalog-product-stars catalog-product-stars-four">
+              <span class="visually-hidden">
+                4 stars
+              </span>
+            </p>
+            <p class="catalog-product-rating">
+              Rating: 8,5
+            </p>
+          </li>
+          <li class="catalog-product-card">
+            <a class="catalog-product-card-link" href="#" tabindex="-1">
+              <img class="catalog-product-img" src="images/hotel-2.jpg" width="300" height="212" loading="lazy"
+                   alt="Surroundings of the Villas at Poco Diablo">
+              <h3 class="catalog-product-title">
+                Villas at&nbsp;Poco Diablo
+              </h3>
+            </a>
+            <p class="catalog-product-type">
+              Hotel
+            </p>
+            <p class="catalog-product-price">
+              From $61
+            </p>
+            <a class="catalog-product-about custom-button" href="#">
+              more
+            </a>
+            <button class="catalog-product-favorite catalog-product-favorite-added custom-button" type="button">
+              saved
+            </button>
+            <p class="catalog-product-stars catalog-product-stars-four">
+              <span class="visually-hidden">
+                4 stars
+              </span>
+            </p>
+            <p class="catalog-product-rating">
+              Rating: 9,2
+            </p>
+          </li>
+          <li class="catalog-product-card">
+            <a class="catalog-product-card-link" href="#" tabindex="-1">
+              <img class="catalog-product-img" src="images/hotel-3.jpg" width="300" height="212" loading="lazy"
+                   alt="Surroundings of the Desert Quail Inn">
+              <h3 class="catalog-product-title">
+                Desert Quail Inn
+              </h3>
+            </a>
+            <p class="catalog-product-type">
+              Hotel
+            </p>
+            <p class="catalog-product-price">
+              From $43
+            </p>
+            <a class="catalog-product-about custom-button" href="#">
+              more
+            </a>
+            <button class="catalog-product-favorite custom-button" type="button">
+              save
+            </button>
+            <p class="catalog-product-stars catalog-product-stars-three">
+              <span class="visually-hidden">
+                3 stars
+              </span>
+            </p>
+            <p class="catalog-product-rating">
+              Rating: 6,9
+            </p>
+          </li>
+          <li class="catalog-product-card">
+            <a class="catalog-product-card-link" href="#" tabindex="-1">
+              <img class="catalog-product-img" src="images/hotel-4.jpg" width="300" height="212" loading="lazy"
+                   alt="Окресности GreenTree Inn">
+              <h3 class="catalog-product-title">
+                GreenTree Inn
+              </h3>
+            </a>
+            <p class="catalog-product-type">
+              Hotel
+            </p>
+            <p class="catalog-product-price">
+              From $31
+            </p>
+            <a class="catalog-product-about custom-button" href="#">
+              more
+            </a>
+            <button class="catalog-product-favorite custom-button" type="button">
+              save
+            </button>
+            <p class="catalog-product-stars catalog-product-stars-two">
+              <span class="visually-hidden">
+                2 stars
+              </span>
+            </p>
+            <p class="catalog-product-rating">
+              Rating: 5,0
+            </p>
+          </li>
+        </ul>
+        <footer class="catalog-products-footer">
+          <ul class="pagination list-reset">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-link-current custom-button" href="#">
+                1
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link custom-button" href="#">
+                2
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link custom-button" href="#">
+                3
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link custom-button" href="#">
+                4
+              </a>
+            </li>
+            <li class="pagination-item">
+              <span class="pagination-more">
+                ...
+              </span>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link custom-button" href="#">
+                10
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="newsletters">
+      <h2 class="newsletters-title newsletters-title-catalog heading-2-title">
+        Subscribe to our newsletter
+      </h2>
+      <p class="newsletters-about newsletters-about-catalog">
+        Only useful information and no spam; <br>scout's honor!
+      </p>
+      <form class="newsletters-form" action="#" method="post">
+        <label class="visually-hidden" for="newsletters-user-email">Your e-mail</label>
+        <input class="newsletters-input" type="email" name="email" id="newsletters-user-email" placeholder="Your e-mail"
+               required>
+        <button class="newsletters-button custom-button" type="submit">
+          Subscribe
+        </button>
+      </form>
+    </section>
+    <div class="footer-contacts">
+      <ul class="socials-list list-reset">
+        <li class="socials-item">
+          <a class="socials-link" href="https://facebook.com/#" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">
+              Facebook group
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 64 64" fill="currentColor">
+              <path d="M48 7H16a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h17V38h-6v-7h6v-5c0-7 4-11 10-11 3.13 0 5 1 5 1v6h-4c-2.86 0-4 2.1-4 4v5h7l-1 7h-6v17h8a8 8 0 0 0 8-8V15a8 8 0 0 0-8-8z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="https://t.me/#" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">
+              Telegram group
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="currentColor">
+              <path d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="https://www.youtube.com/user/#" target="_blank"
+             rel="noreferrer noopener">
+            <span class="visually-hidden">
+              YouTube channel
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="currentColor">
+              <path d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-phone" href="tel:+10000000000">
+        +1 (000) 000-0000
+      </a>
+      <span class="footer-logo">
+        SP
+      </span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
